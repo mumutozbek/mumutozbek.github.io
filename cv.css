@@ -1,0 +1,36 @@
+.cv { max-width: 810px; padding-block: 54px 72px; }
+.cv-title { padding-bottom: 20px; border-bottom: 2px solid var(--link); }
+.cv-title h1 { font-size: 51px; margin-bottom: 10px; }
+.cv section { margin-top: 24px; }
+.cv h2 { margin-bottom: 8px; font-size: 23px; max-width: none; }
+.cv .timeline > div { padding-block: 7px; }
+.cv-list { padding-inline-start: 20px; margin-block: 0; }
+.cv-list li + li { margin-top: 7px; }
+.cv-list a { color: var(--link); }
+.cv-title a { overflow-wrap: anywhere; }
+
+@media (max-width: 640px) {
+  .cv-header .header-inner { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 8px; }
+  .cv-header .button { gap: 8px; padding-inline: 11px; }
+  .cv-title h1 { font-size: 38px; }
+  .cv { padding-block: 33px 50px; }
+}
+
+@page { size: letter; margin: 12mm 16mm; }
+@media print {
+  .cv-header, .skip-link { display: none; }
+  body { background: #fff; color: #171d1a; font-size: 10.5pt; line-height: 1.42; }
+  .cv { width: 100%; max-width: none; padding: 0; }
+  .cv-title { padding-bottom: 9pt; }
+  .cv-title h1 { font-size: 27pt; margin-bottom: 4pt; }
+  .cv-title .text-links { margin-top: 4pt; }
+  .cv .eyebrow { margin-bottom: 4pt; }
+  .cv section { margin-top: 14pt; }
+  .cv section[aria-labelledby="cv-research"] { break-before: page; margin-top: 0; }
+  .cv h2 { font-size: 13pt; margin-bottom: 4pt; break-after: avoid; }
+  .cv .timeline > div { padding-block: 3pt; break-inside: avoid; }
+  .cv .timeline dt { font-size: 10pt; }
+  .cv .timeline dd { margin-top: 1pt; }
+  .cv-list li { break-inside: avoid; }
+  .cv-list li + li { margin-top: 4pt; }
+}
