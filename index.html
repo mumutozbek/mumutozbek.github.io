@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mustafa Umut Ozbek | Nuclear Engineering &amp; OT Cybersecurity</title>
-  <meta name="description" content="Mustafa Umut Ozbek is a nuclear engineer and PhD researcher at Ontario Tech University working on reactor and energy systems, instrumentation and control, and trustworthy AI for industrial cybersecurity.">
+  <meta name="description" content="Mustafa Umut Ozbek, nuclear engineer and PhD researcher at Ontario Tech University. Explore reactor simulation, nuclear I&amp;C, AI/ML for OT cybersecurity, and engineering project management.">
   <meta name="theme-color" content="#171d1a">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Mustafa Umut Ozbek | Nuclear Engineering &amp; OT Cybersecurity">
@@ -12,22 +12,27 @@
   <meta property="og:url" content="https://mumutozbek.github.io/">
   <meta property="og:image" content="https://mumutozbek.github.io/assets/portrait.jpg?v=2">
   <meta property="og:image:alt" content="Portrait of Mustafa Umut Ozbek">
+  <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://mumutozbek.github.io/">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="./styles.css?v=2">
-  <script src="./research-story.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <script src="./research-story.js?v=2" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
+    "url": "https://mumutozbek.github.io/",
+    "name": "Mustafa Umut Ozbek | Nuclear Engineering and OT Cybersecurity",
     "mainEntity": {
       "@type": "Person",
+      "@id": "https://mumutozbek.github.io/#person",
       "name": "Mustafa Umut Ozbek",
+      "description": "Nuclear engineer and PhD researcher at Ontario Tech University.",
       "url": "https://mumutozbek.github.io/",
       "image": "https://mumutozbek.github.io/assets/portrait.jpg?v=2",
       "affiliation": {"@type": "CollegeOrUniversity", "name": "Ontario Tech University"},
       "sameAs": ["https://github.com/mumutozbek", "https://www.linkedin.com/in/mustafaumutozbek/", "https://conf.researchr.org/profile/cascon-2026/mustafaumutozbek"],
-      "knowsAbout": ["Nuclear engineering", "Reactor modeling", "Instrumentation and control", "Operational technology cybersecurity", "Machine learning", "Engineering project management"]
+      "knowsAbout": ["Nuclear engineering", "Reactor modeling and simulation", "Nuclear instrumentation and control (I&C)", "Operational technology cybersecurity", "Machine learning", "Engineering project management"]
     }
   }
   </script>
@@ -36,7 +41,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="./index.html" aria-label="Mustafa Umut Ozbek, home">M. U. <span>Ozbek</span></a>
+      <a class="wordmark" href="./" aria-label="Mustafa Umut Ozbek, home">M. U. <span>Ozbek</span></a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
@@ -46,26 +51,75 @@
     </div>
   </header>
   <main id="main">
-    <section class="hero" aria-labelledby="name">
-      <img class="hero-image" src="./assets/plant.jpg" width="1536" height="1024" alt="" fetchpriority="high">
-      <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow hero-eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD researcher</p>
-          <h1 id="name">Mustafa Umut<br>Ozbek</h1>
-          <p class="hero-description">I study how we can model, monitor, and protect nuclear and industrial systems. My work brings together reactor technology, instrumentation and control, and machine learning.</p>
-          <div class="actions">
-            <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">&#8595;</span></a>
-            <a class="button button-outline" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
+    <div class="opening-story">
+      <div class="opening-media" aria-hidden="true">
+        <img class="hero-image" src="./assets/plant.jpg" width="1536" height="1024" alt="" fetchpriority="high">
+      </div>
+      <div class="opening-content">
+        <section class="hero" aria-labelledby="name">
+          <div class="wrap hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow hero-eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD Researcher</p>
+              <h1 id="name">Mustafa Umut<br>Ozbek</h1>
+              <p class="hero-description">I study how we can model, monitor, and protect nuclear and industrial systems. My work brings together reactor technology, instrumentation and control, and machine learning.</p>
+              <div class="actions">
+                <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">&#8595;</span></a>
+                <a class="button button-outline" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
+              </div>
+            </div>
+            <p class="hero-caption">Illustrative nuclear power station</p>
+          </div>
+        </section>
+
+        <section id="research" class="research-lead" aria-labelledby="research-heading">
+          <div class="wrap research-lead-inner">
+            <p class="eyebrow">Research</p>
+            <h2 id="research-heading">From reactor systems to trustworthy monitoring</h2>
+            <p>I connect nuclear engineering, instrumentation and control (I&amp;C), and machine learning to study how industrial systems behave and how teams can monitor them.</p>
+            <a href="./research.html">View research areas <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="section research" aria-label="Research chapters" data-research-story>
+      <div class="wrap">
+        <div class="research-story" data-scene="systems">
+          <div class="story-stage" aria-hidden="true">
+            <div class="story-image story-image-plant">
+              <img src="./assets/plant.jpg" width="1536" height="1024" alt="" loading="lazy">
+              <span>Illustrative power station</span>
+            </div>
+            <div class="story-image story-image-conference">
+              <img src="./assets/cascon-toronto.jpg" width="720" height="960" alt="" loading="lazy">
+              <span>IEEE CASCON 2026, Toronto</span>
+            </div>
+          </div>
+          <div class="story-chapters">
+            <article class="story-chapter" data-scene="systems">
+              <h3>Reactor modeling and simulation</h3>
+              <p>I study how small modular reactors and battery energy storage can work together. Dynamic simulation helps me explore how plant and storage behavior changes as demand shifts.</p>
+              <p class="text-links"><a href="./research.html#nuclear-simulation">Nuclear energy simulation research <span aria-hidden="true">&#8599;</span></a></p>
+            </article>
+            <article class="story-chapter" data-scene="control">
+              <h3>Nuclear instrumentation and control (I&amp;C)</h3>
+              <p>Process measurements and control signals tell different parts of the same story. I study how combining them can help distinguish normal variation from events that need investigation.</p>
+              <p class="text-links"><a href="./research.html#instrumentation-control">Nuclear I&amp;C research <span aria-hidden="true">&#8599;</span></a></p>
+            </article>
+            <article class="story-chapter" data-scene="evaluation">
+              <h3>Trustworthy AI for OT cybersecurity</h3>
+              <p>I evaluate whether anomaly detectors hold up when operating conditions or recording practices change. My work combines explainable AI, time-series analysis, and careful testing across industrial datasets.</p>
+              <p class="text-links"><a href="./research.html#ai-ot-cybersecurity">AI and nuclear cybersecurity research <span aria-hidden="true">&#8599;</span></a></p>
+            </article>
           </div>
         </div>
-        <p class="hero-caption">Illustrative nuclear power station</p>
       </div>
     </section>
 
     <aside class="update-band" aria-label="Featured publication">
       <div class="wrap update-inner">
-      <span class="eyebrow">ICSS at ACSAC 2026</span>
-      <a href="#icss">Can a detector distinguish an intrusion from differences between recordings? <span aria-hidden="true">&#8595;</span></a>
+        <span class="eyebrow">ICSS at ACSAC 2026</span>
+        <a href="#icss">Can a detector distinguish an intrusion from differences between recordings? <span aria-hidden="true">&#8595;</span></a>
       </div>
     </aside>
 
@@ -81,40 +135,6 @@
         <img src="./assets/portrait.jpg?v=2" width="720" height="720" loading="lazy" alt="Portrait of Mustafa Umut Ozbek">
         <figcaption>Ontario Tech University, Oshawa, Canada</figcaption>
       </figure>
-    </section>
-
-    <section id="research" class="section research" aria-labelledby="research-heading" data-research-story>
-      <div class="wrap">
-        <p class="eyebrow">Research</p>
-        <h2 id="research-heading">From reactor systems to trustworthy monitoring</h2>
-        <div class="research-story" data-scene="systems">
-          <div class="story-stage" aria-hidden="true">
-            <div class="story-image story-image-plant">
-              <img src="./assets/plant.jpg" width="1536" height="1024" alt="" loading="lazy">
-              <span>Illustrative power station</span>
-            </div>
-            <div class="story-image story-image-conference">
-              <img src="./assets/cascon-presentation.jpg" width="720" height="960" alt="" loading="lazy">
-              <span>IEEE CASCON 2026, Toronto</span>
-            </div>
-          </div>
-          <div class="story-chapters">
-            <article class="story-chapter" data-scene="systems">
-              <h3>Reactor and hybrid energy systems</h3>
-              <p>I study how small modular reactors and battery energy storage can work together. Dynamic simulation helps me explore how plant and storage behavior changes as demand shifts.</p>
-            </article>
-            <article class="story-chapter" data-scene="control">
-              <h3>Nuclear instrumentation and control</h3>
-              <p>Process measurements and control signals tell different parts of the same story. I study how combining them can help distinguish normal variation from events that need investigation.</p>
-            </article>
-            <article class="story-chapter" data-scene="evaluation">
-              <h3>Trustworthy AI for OT cybersecurity</h3>
-              <p>I evaluate whether anomaly detectors hold up when operating conditions or recording practices change. My work combines explainable AI, time-series analysis, and careful testing across industrial datasets.</p>
-              <p class="text-links"><a href="#projects">Explore the research projects <span aria-hidden="true">&#8595;</span></a></p>
-            </article>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="projects" class="section projects" aria-labelledby="projects-heading">
@@ -137,8 +157,8 @@
             </article>
           </div>
           <figure class="project-figure">
-            <img src="./assets/cascon-presentation.jpg" width="720" height="960" loading="lazy" alt="Mustafa Umut Ozbek and a colleague beneath the title slide of their IEEE CASCON 2026 presentation">
-            <figcaption><a href="https://www.linkedin.com/feed/update/urn:li:activity:7526056151474548737/">IEEE CASCON 2026, Toronto</a></figcaption>
+            <img src="./assets/cascon-toronto.jpg" width="720" height="960" loading="lazy" alt="Mustafa Umut Ozbek outdoors during IEEE CASCON 2026 in Toronto">
+            <figcaption>IEEE CASCON 2026, Toronto</figcaption>
           </figure>
         </div>
       </div>
@@ -209,11 +229,11 @@
               <div><dt>M.Sc., Nuclear Engineering and Management</dt><dd class="meta">Tsinghua University / 2022-2024</dd><dd>Best Academic Performance and Best Thesis awards. Thesis on ML for nuclear safety and cybersecurity.</dd></div>
               <div><dt>B.Sc., Mechanical Engineering</dt><dd class="meta">Dokuz Eylul University / 2016-2021</dd></div>
               <div><dt>Nuclear Career Accelerator Program</dt><dd class="meta">Ontario Tech University / 2026</dd><dd>Certificate covering Canadian nuclear safety, regulation, project development, operations, and emerging reactor technologies.</dd></div>
-              <div><dt>Nuclear plant training &amp; research internship</dt><dd class="meta">SPIC/SNERDI, CNNC Qinshan, and CGN Daya Bay / 2023</dd><dd>Training across pressurized water reactor technology, plant construction, I&amp;C, operator training, and safety culture.</dd></div>
+              <div><dt>Nuclear plant training &amp; research internship</dt><dd class="meta">2023</dd><dd>Training across pressurized water reactor technology, plant construction, I&amp;C, operator training, and safety culture.</dd></div>
             </dl>
           </div>
         </div>
-        <p class="text-links"><a href="./cv.html">View curriculum vitae <span aria-hidden="true">&#8599;</span></a></p>
+        <p class="text-links"><a href="./cv.html">View curriculum vitae <span aria-hidden="true">&#8599;</span></a><a href="./research.html#project-management">Engineering project management <span aria-hidden="true">&#8599;</span></a></p>
       </div>
     </section>
 

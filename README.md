@@ -14,6 +14,6 @@ The public profile and CV reflect graduate research, nuclear engineering, teachi
 
 - `assets/plant.jpg`: ImageGen illustration of a fictional civilian nuclear plant exterior across a lake at dusk.
 - `assets/portrait.jpg`: Local high-resolution copy of the current LinkedIn portrait.
-- `assets/cascon-presentation.jpg`: Photo from the public IEEE CASCON 2026 LinkedIn post.
+- `assets/cascon-toronto.jpg`: Solo photo from IEEE CASCON 2026 in Toronto.
 
 When `cv.html` changes, regenerate `assets/mustafa-umut-ozbek-cv.pdf` with the browser's print-to-PDF option using Letter paper and disabled browser headers and footers. The public CV shares an academic email address and public profile links.
