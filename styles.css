@@ -127,14 +127,14 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .research-profile section p { max-width: 75ch; margin-top: 9px; }
 .research-feature { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 24px 48px; align-items: start; }
 .research-figure { max-width: 460px; }
-.research-figure img, .field-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 58%; border-radius: 4px; }
-.research-figure a { color: var(--link); }
+.research-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 58%; border-radius: 4px; }
+.research-figure a, .field-portrait a { color: var(--link); }
 .field-profile h1 { max-width: none; }
-.field-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; margin-top: 20px; }
-.field-gallery h3 { margin-top: 14px; }
-.field-gallery img { aspect-ratio: 5 / 4; object-position: center 64%; }
+.field-portrait { width: 100%; max-width: 345px; }
+.field-portrait-frame { position: relative; aspect-ratio: 5 / 7; overflow: hidden; border-radius: 4px; }
+.field-portrait-frame img { position: absolute; top: -10%; left: -29%; width: 160%; max-width: none; }
 .field-entry { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); gap: 12px 48px; }
-.field-entry .eyebrow { margin-top: 0; }
+.field-profile section .eyebrow { margin-top: 0; }
 .field-entry > div > p:first-child { margin-top: 0; }
 .field-roles > div:first-child { padding-top: 0; border-top: 0; }
 .site-nav [aria-current="page"] { color: var(--accent); }
@@ -217,8 +217,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .research-profile { padding-block: 30px 48px; }
   .research-profile h1 { font-size: 36px; }
   .research-profile h2 { font-size: 24px; }
-  .research-feature, .field-gallery, .field-entry { grid-template-columns: minmax(0, 1fr); }
-  .field-gallery { gap: 24px; }
+  .research-feature, .field-entry { grid-template-columns: minmax(0, 1fr); }
   .hero-eyebrow { margin-bottom: 12px; }
   .hero-description { margin-top: 15px; font-size: 16px; }
   .actions { margin-top: 18px; gap: 8px; }

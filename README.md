@@ -17,7 +17,8 @@ The public profile and CV reflect graduate research, nuclear engineering, teachi
 - `assets/cascon-toronto.jpg`: Solo photo from IEEE CASCON 2026 in Toronto.
 - `assets/advanced-test-reactor-core.jpg`: Resized [Advanced Test Reactor core photograph](https://commons.wikimedia.org/wiki/File:Advanced_Test_Reactor.jpg), Argonne National Laboratory, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Used as reference photography, not as an image of the author's simulation.
 - `assets/qinshan-plant-training.jpg` and `assets/daya-bay-plant-training.jpg`: Resized solo plant-training photos from the author's collection.
+- `assets/chalk-river-museum-portrait.jpg`: Portrait from the author's [LinkedIn post](https://www.linkedin.com/posts/mustafaumutozbek_candu-nuclearenergy-ugcPost-7526851310755905536-dFxi/) of the Canadian Nuclear Heritage Museum stop during the Chalk River trip.
 
-The Experience page links to the author's public Qinshan and Chalk River posts and to Ontario Tech's Chalk River program coverage. Project experience names the Akkuyu site and project, without implying direct employment by the plant.
+The Experience page links to the author's original Chalk River recap, the museum photo post, Ontario Tech's program coverage, and the public IEEE ACSAC workshop agenda. Project experience names the Akkuyu site and project, without implying direct employment by the plant.
 
 When `cv.html` changes, regenerate `assets/mustafa-umut-ozbek-cv.pdf` with the browser's print-to-PDF option using Letter paper and disabled browser headers and footers. The public CV shares an academic email address and public profile links.
