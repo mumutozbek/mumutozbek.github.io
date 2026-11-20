@@ -98,6 +98,17 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .academic-cover.academic-plot { object-fit: contain; background: #fff; padding-inline: 5px; }
 .academic-teaching-photo { object-position: center 68%; }
 .academic-source { color: var(--muted); font: 11px/1.5 var(--mono); }
+.engagement-spotlight { display: grid; grid-template-columns: minmax(0, .95fr) repeat(2, minmax(0, 1fr)); gap: 25px; align-items: start; margin-top: 45px; padding-top: 32px; border-top: 1px solid var(--line); }
+.engagement-spotlight h2 { margin-bottom: 12px; font-size: 32px; }
+.engagement-intro > p:not(.eyebrow) { max-width: 37ch; }
+.engagement-link { display: block; text-decoration: none; }
+.engagement-link img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 4px; }
+.engagement-link h3 { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; margin-block: 10px 5px; font-size: 19px; }
+.engagement-link h3 span { color: var(--link); font-size: 14px; }
+.engagement-link:hover h3 { color: var(--link); text-decoration: underline; }
+.engagement-link p { font: 12px/1.55 var(--mono); }
+.engagement-link .unoda-photo, .research-figure .unoda-photo { object-position: center 12%; }
+.engagement-link .iaea-photo, .research-figure .iaea-photo { object-position: center 45%; }
 
 .projects { background: var(--wash); }
 .project-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: start; }
@@ -158,9 +169,6 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .timeline dt { font-size: 17px; font-weight: 750; line-height: 1.35; }
 .timeline dd { color: var(--muted); margin-top: 3px; }
 .meta { font-size: 13px; font-weight: 650; }
-.engagement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px 48px; }
-.engagement-grid article { border-top: 1px solid var(--line); padding-top: 16px; }
-.engagement-grid h3 { font-size: 19px; margin-bottom: 7px; }
 .contact { background: var(--wash); }
 .contact-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 50px; align-items: center; }
 .contact h2 { margin-bottom: 13px; }
@@ -199,6 +207,9 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .about { gap: 30px; }
   .project-layout { gap: 28px; }
   .academic-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .engagement-spotlight { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .engagement-intro { grid-column: 1 / -1; }
+  .engagement-intro > p:not(.eyebrow) { max-width: 59ch; }
 }
 
 @media (max-width: 640px) {
@@ -229,10 +240,14 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .update-inner a { font-size: 14px; }
   .section { padding-block: 43px; }
   .section h2 { margin-bottom: 21px; }
-  .about, .project-layout, .experience-grid, .engagement-grid, .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 23px; }
+  .about, .project-layout, .experience-grid, .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 23px; }
   .academic-links { gap: 21px 15px; }
   .academic-links h3 { font-size: 17px; }
   .academic-links p { font-size: 14px; }
+  .engagement-spotlight { gap: 16px; margin-top: 30px; padding-top: 23px; }
+  .engagement-spotlight h2 { margin-bottom: 9px; font-size: 25px; }
+  .engagement-link h3 { font-size: 16px; }
+  .engagement-link img { aspect-ratio: 4 / 3; }
   .teaching-appointments > div { grid-template-columns: minmax(0, 1fr); }
   .project-figure { max-width: 310px; }
   .portrait { max-width: 265px; }

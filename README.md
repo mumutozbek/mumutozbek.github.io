@@ -22,7 +22,13 @@ The public profile and CV reflect graduate research, nuclear engineering, teachi
 - `assets/control-room-visit.webp`: Solo training photo from the author's local collection.
 - `assets/recording-aware-results.webp` and `assets/recording-aware-preview.webp`: Figure 2 and panel 2a from the author's [recording-aware evaluation preprint](https://arxiv.org/abs/2610.24128), showing window-size sensitivity across evaluation protocols.
 - `assets/ontario-tech-teaching.webp`: Solo simulator lab photo from the author's [Ontario Tech course-session post](https://www.linkedin.com/feed/update/urn:li:activity:7469888368735281152/).
+- `assets/unoda-youth-leader.webp`: Solo portrait from the author's [UNODA study-visit recap](https://www.linkedin.com/feed/update/urn:li:activity:7479005596520697856/).
+- `assets/iaea-icons-2024.webp`: Solo portrait from the author's [ICONS 2024 recap](https://www.linkedin.com/posts/mustafaumutozbek_icons2024-iaea-icons2024-activity-7199138746045255682-WIay), matched to the local original.
 
 The Experience page links to the author's original Chalk River recap, the museum photo post, Ontario Tech's program coverage, and the public IEEE ACSAC workshop agenda. Project experience names the Akkuyu site and project, without implying direct employment by the plant.
 
 When `cv.html` changes, regenerate `assets/mustafa-umut-ozbek-cv.pdf` with the browser's print-to-PDF option using Letter paper and disabled browser headers and footers. The public CV shares an academic email address and public profile links.
+
+The homepage declares the site and the author's profile as structured data. Each content page has a self-referencing canonical and a plain HTML link from the site. For Google Search Console, use the URL-prefix property `https://mumutozbek.github.io/`, submit `sitemap.xml`, and inspect the live URLs and indexing status separately. The sitemap does not guarantee indexing.
+
+Keep the Google Search Console verification HTML file at the site root, even after ownership is verified. It is not an indexable content page and is not listed in the sitemap.
