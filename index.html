@@ -16,8 +16,9 @@
   <link rel="canonical" href="https://mumutozbek.github.io/">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
   <link rel="stylesheet" href="./styles.css?v=9">
-  <link rel="stylesheet" href="./campus-map.css?v=3">
+  <link rel="stylesheet" href="./campus-map.css?v=4">
   <script src="./campus-map.js?v=3" defer></script>
+  <script src="./research-story.js?v=4" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,116 +67,118 @@
     </div>
   </header>
   <main id="main">
-    <section id="campus" class="campus-map" aria-labelledby="name">
-      <div class="campus-intro">
-        <p class="eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD Researcher</p>
-        <h1 id="name">Mustafa Umut<br> Ozbek</h1>
-        <p class="campus-summary">I study how to model, monitor, and protect nuclear and industrial systems.</p>
-        <a class="button button-outline campus-cv" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
-      </div>
-      <div class="campus-world">
-        <div class="campus-art" aria-hidden="true">
-          <div class="campus-scene">
-            <img class="campus-image" src="./assets/campus-twilight-wide.webp" srcset="./assets/campus-twilight-wide-small.webp 950w, ./assets/campus-twilight-wide.webp 1672w" sizes="(max-width: 970px) 132vw, 100vw" width="1672" height="941" fetchpriority="high" alt="">
-            <svg class="campus-lines" viewBox="0 0 1672 941" preserveAspectRatio="none" aria-hidden="true">
-              <g data-landmark="reactor-modeling" class="is-active"><polyline points="1084,199 1010,280 967,408"/><circle cx="967" cy="408" r="6"/><text x="967" y="408">01</text></g>
-              <g data-landmark="ot-cybersecurity"><polyline points="806,272 806,326 768,366"/><circle cx="768" cy="366" r="6"/><text x="768" y="366">02</text></g>
-              <g data-landmark="control-systems"><polyline points="669,499 744,499 782,489"/><circle cx="782" cy="489" r="6"/><text x="782" y="489">03</text></g>
-              <g data-landmark="teaching"><polyline points="806,696 725,645 704,600"/><circle cx="704" cy="600" r="6"/><text x="704" y="600">04</text></g>
-              <g data-landmark="publications"><polyline points="1127,767 1065,702 936,616"/><circle cx="936" cy="616" r="6"/><text x="936" y="616">05</text></g>
-              <g data-landmark="engagement"><polyline points="1480,572 1298,572 1182,610"/><circle cx="1182" cy="610" r="6"/><text x="1182" y="610">06</text></g>
-              <g data-landmark="experience"><polyline points="1412,309 1358,371 1261,419"/><circle cx="1261" cy="419" r="6"/><text x="1261" y="419">07</text></g>
-            </svg>
+    <div class="campus-chapter">
+      <section id="campus" class="campus-map" aria-labelledby="name">
+        <div class="campus-intro">
+          <p class="eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD Researcher</p>
+          <h1 id="name">Mustafa Umut<br> Ozbek</h1>
+          <p class="campus-summary">I study how to model, monitor, and protect nuclear and industrial systems.</p>
+          <a class="button button-outline campus-cv" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <div class="campus-world">
+          <div class="campus-art" aria-hidden="true">
+            <div class="campus-scene">
+              <img class="campus-image" src="./assets/campus-twilight-wide.webp" srcset="./assets/campus-twilight-wide-small.webp 950w, ./assets/campus-twilight-wide.webp 1672w" sizes="(max-width: 970px) 132vw, 100vw" width="1672" height="941" fetchpriority="high" alt="">
+              <svg class="campus-lines" viewBox="0 0 1672 941" preserveAspectRatio="none" aria-hidden="true">
+                <g data-landmark="reactor-modeling" class="is-active"><polyline points="1084,199 1010,280 967,408"/><circle cx="967" cy="408" r="6"/><text x="967" y="408">01</text></g>
+                <g data-landmark="ot-cybersecurity"><polyline points="806,272 806,326 768,366"/><circle cx="768" cy="366" r="6"/><text x="768" y="366">02</text></g>
+                <g data-landmark="control-systems"><polyline points="669,499 744,499 782,489"/><circle cx="782" cy="489" r="6"/><text x="782" y="489">03</text></g>
+                <g data-landmark="teaching"><polyline points="806,696 725,645 704,600"/><circle cx="704" cy="600" r="6"/><text x="704" y="600">04</text></g>
+                <g data-landmark="publications"><polyline points="1127,767 1065,702 936,616"/><circle cx="936" cy="616" r="6"/><text x="936" y="616">05</text></g>
+                <g data-landmark="engagement"><polyline points="1480,572 1298,572 1182,610"/><circle cx="1182" cy="610" r="6"/><text x="1182" y="610">06</text></g>
+                <g data-landmark="experience"><polyline points="1412,309 1358,371 1261,419"/><circle cx="1261" cy="419" r="6"/><text x="1261" y="419">07</text></g>
+              </svg>
+            </div>
+          </div>
+          <nav class="campus-landmarks" aria-label="Portfolio map">
+            <a class="campus-landmark is-active" href="#reactor-modeling" style="--x:64.833%;--y:21.148%;--pin-x:57.835%;--pin-y:43.358%">
+              <span class="campus-card">
+                <img src="./assets/campus/reactor.webp" width="380" height="253" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">01</span><span>Reactor modeling</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#ot-cybersecurity" style="--x:48.206%;--y:28.905%;--pin-x:45.933%;--pin-y:38.895%">
+              <span class="campus-card campus-plot">
+                <img src="./assets/campus/cyber.webp" width="380" height="243" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">02</span><span>OT cybersecurity &amp; AI</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#control-systems" style="--x:40.012%;--y:53.029%;--pin-x:46.770%;--pin-y:51.966%">
+              <span class="campus-card campus-control">
+                <img src="./assets/campus/control.webp" width="380" height="285" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">03</span><span>Control systems</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#teaching" style="--x:48.206%;--y:73.964%;--pin-x:42.105%;--pin-y:63.762%">
+              <span class="campus-card campus-teaching">
+                <img src="./assets/campus/teaching.webp" width="380" height="507" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">04</span><span>Teaching</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#publications" style="--x:67.404%;--y:81.509%;--pin-x:55.981%;--pin-y:65.462%">
+              <span class="campus-card campus-publications">
+                <img src="./assets/campus/publications.webp" width="380" height="507" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">05</span><span>Publications &amp; talks</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#engagement" style="--x:88.517%;--y:60.786%;--pin-x:70.694%;--pin-y:64.825%">
+              <span class="campus-card campus-engagement">
+                <img src="./assets/campus/engagement.webp" width="380" height="380" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">06</span><span>International engagement</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+            <a class="campus-landmark" href="#experience" style="--x:84.450%;--y:32.837%;--pin-x:75.419%;--pin-y:44.527%">
+              <span class="campus-card campus-experience">
+                <img src="./assets/campus/experience.webp" width="380" height="507" alt="">
+                <span class="campus-label"><span class="campus-number" aria-hidden="true">07</span><span>Experience &amp; education</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+              </span><span class="campus-pin" aria-hidden="true"></span>
+            </a>
+          </nav>
+        </div>
+        <a class="campus-next" href="#selected-work">Selected work <span aria-hidden="true">&#8595;</span></a>
+        <!-- Pause and play icons: Lucide, ISC license (assets/lucide-notice.txt). -->
+        <button class="campus-orbit-toggle" type="button" aria-label="Pause card motion" title="Pause card motion" hidden>
+          <svg class="campus-pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/>
+          </svg>
+          <svg class="campus-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>
+          </svg>
+        </button>
+      </section>
+
+      <section id="selected-work" class="section academic-index" aria-labelledby="academic-index-heading" tabindex="-1">
+        <div class="wrap">
+          <h2 id="academic-index-heading">Research and teaching</h2>
+          <div class="academic-links">
+            <a id="reactor-modeling" class="map-destination" href="./research.html#nuclear-simulation" aria-labelledby="index-simulation">
+              <img class="academic-cover" src="./assets/core-cutaway.webp" width="1180" height="787" alt="Illustrative reactor core cutaway colored like a thermal visualization" loading="lazy">
+              <h3 id="index-simulation">Reactor modeling <span aria-hidden="true">&#8599;</span></h3>
+              <p>Small modular reactors, battery storage, and dynamic simulation.</p>
+              <span class="academic-source">Conceptual core illustration</span>
+            </a>
+            <a id="control-systems" class="map-destination" href="./research.html#instrumentation-control" aria-labelledby="index-control">
+              <img class="academic-cover" src="./assets/control-room-visit.webp" width="1050" height="788" alt="Mustafa Umut Ozbek in a control room during nuclear plant training" loading="lazy">
+              <h3 id="index-control">Nuclear I&amp;C <span aria-hidden="true">&#8599;</span></h3>
+              <p>Process instrumentation, control systems, and operator training.</p>
+              <span class="academic-source">Nuclear plant training visit</span>
+            </a>
+            <a id="ot-cybersecurity" class="map-destination" href="./research.html#ai-ot-cybersecurity" aria-labelledby="index-cybersecurity">
+              <img class="academic-cover academic-plot" src="./assets/recording-aware-preview.webp" width="525" height="336" alt="Cross- and same-recording AUC comparison from Figure 2a of the OT intrusion detection preprint" loading="lazy">
+              <h3 id="index-cybersecurity">OT cybersecurity <span aria-hidden="true">&#8599;</span></h3>
+              <p>Machine learning and evaluation of industrial anomaly detectors.</p>
+              <span class="academic-source">Figure 2a / ICSS 2026 preprint</span>
+            </a>
+            <a id="teaching" class="map-destination" href="./teaching.html" aria-labelledby="index-teaching">
+              <img class="academic-cover academic-teaching-photo" src="./assets/ontario-tech-teaching.webp" width="1050" height="1400" alt="Mustafa Umut Ozbek at the Ontario Tech nuclear cybersecurity course" loading="lazy">
+              <h3 id="index-teaching">Teaching <span aria-hidden="true">&#8599;</span></h3>
+              <p>Course appointments, student support, and simulator labs at Ontario Tech.</p>
+              <span class="academic-source">Ontario Tech University</span>
+            </a>
           </div>
         </div>
-        <nav class="campus-landmarks" aria-label="Portfolio map">
-          <a class="campus-landmark is-active" href="#reactor-modeling" style="--x:64.833%;--y:21.148%;--pin-x:57.835%;--pin-y:43.358%">
-            <span class="campus-card">
-              <img src="./assets/campus/reactor.webp" width="380" height="253" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">01</span><span>Reactor modeling</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#ot-cybersecurity" style="--x:48.206%;--y:28.905%;--pin-x:45.933%;--pin-y:38.895%">
-            <span class="campus-card campus-plot">
-              <img src="./assets/campus/cyber.webp" width="380" height="243" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">02</span><span>OT cybersecurity &amp; AI</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#control-systems" style="--x:40.012%;--y:53.029%;--pin-x:46.770%;--pin-y:51.966%">
-            <span class="campus-card campus-control">
-              <img src="./assets/campus/control.webp" width="380" height="285" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">03</span><span>Control systems</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#teaching" style="--x:48.206%;--y:73.964%;--pin-x:42.105%;--pin-y:63.762%">
-            <span class="campus-card campus-teaching">
-              <img src="./assets/campus/teaching.webp" width="380" height="507" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">04</span><span>Teaching</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#publications" style="--x:67.404%;--y:81.509%;--pin-x:55.981%;--pin-y:65.462%">
-            <span class="campus-card campus-publications">
-              <img src="./assets/campus/publications.webp" width="380" height="507" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">05</span><span>Publications &amp; talks</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#engagement" style="--x:88.517%;--y:60.786%;--pin-x:70.694%;--pin-y:64.825%">
-            <span class="campus-card campus-engagement">
-              <img src="./assets/campus/engagement.webp" width="380" height="380" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">06</span><span>International engagement</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-          <a class="campus-landmark" href="#experience" style="--x:84.450%;--y:32.837%;--pin-x:75.419%;--pin-y:44.527%">
-            <span class="campus-card campus-experience">
-              <img src="./assets/campus/experience.webp" width="380" height="507" alt="">
-              <span class="campus-label"><span class="campus-number" aria-hidden="true">07</span><span>Experience &amp; education</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
-            </span><span class="campus-pin" aria-hidden="true"></span>
-          </a>
-        </nav>
-      </div>
-      <a class="campus-next" href="#selected-work">Selected work <span aria-hidden="true">&#8595;</span></a>
-      <!-- Pause and play icons: Lucide, ISC license (assets/lucide-notice.txt). -->
-      <button class="campus-orbit-toggle" type="button" aria-label="Pause card motion" title="Pause card motion" hidden>
-        <svg class="campus-pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/>
-        </svg>
-        <svg class="campus-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>
-        </svg>
-      </button>
-    </section>
-
-    <section id="selected-work" class="section academic-index" aria-labelledby="academic-index-heading" tabindex="-1">
-      <div class="wrap">
-        <h2 id="academic-index-heading">Research and teaching</h2>
-        <div class="academic-links">
-          <a id="reactor-modeling" class="map-destination" href="./research.html#nuclear-simulation" aria-labelledby="index-simulation">
-            <img class="academic-cover" src="./assets/core-cutaway.webp" width="1180" height="787" alt="Illustrative reactor core cutaway colored like a thermal visualization" loading="lazy">
-            <h3 id="index-simulation">Reactor modeling <span aria-hidden="true">&#8599;</span></h3>
-            <p>Small modular reactors, battery storage, and dynamic simulation.</p>
-            <span class="academic-source">Conceptual core illustration</span>
-          </a>
-          <a id="control-systems" class="map-destination" href="./research.html#instrumentation-control" aria-labelledby="index-control">
-            <img class="academic-cover" src="./assets/control-room-visit.webp" width="1050" height="788" alt="Mustafa Umut Ozbek in a control room during nuclear plant training" loading="lazy">
-            <h3 id="index-control">Nuclear I&amp;C <span aria-hidden="true">&#8599;</span></h3>
-            <p>Process instrumentation, control systems, and operator training.</p>
-            <span class="academic-source">Nuclear plant training visit</span>
-          </a>
-          <a id="ot-cybersecurity" class="map-destination" href="./research.html#ai-ot-cybersecurity" aria-labelledby="index-cybersecurity">
-            <img class="academic-cover academic-plot" src="./assets/recording-aware-preview.webp" width="525" height="336" alt="Cross- and same-recording AUC comparison from Figure 2a of the OT intrusion detection preprint" loading="lazy">
-            <h3 id="index-cybersecurity">OT cybersecurity <span aria-hidden="true">&#8599;</span></h3>
-            <p>Machine learning and evaluation of industrial anomaly detectors.</p>
-            <span class="academic-source">Figure 2a / ICSS 2026 preprint</span>
-          </a>
-          <a id="teaching" class="map-destination" href="./teaching.html" aria-labelledby="index-teaching">
-            <img class="academic-cover academic-teaching-photo" src="./assets/ontario-tech-teaching.webp" width="1050" height="1400" alt="Mustafa Umut Ozbek at the Ontario Tech nuclear cybersecurity course" loading="lazy">
-            <h3 id="index-teaching">Teaching <span aria-hidden="true">&#8599;</span></h3>
-            <p>Course appointments, student support, and simulator labs at Ontario Tech.</p>
-            <span class="academic-source">Ontario Tech University</span>
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section id="research" class="research-lead campus-research" aria-labelledby="research-heading">
       <div class="wrap research-lead-inner">
