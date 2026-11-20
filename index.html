@@ -16,7 +16,8 @@
   <link rel="canonical" href="https://mumutozbek.github.io/">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
   <link rel="stylesheet" href="./styles.css?v=8">
-  <script src="./research-story.js?v=3" defer></script>
+  <link rel="stylesheet" href="./campus-map.css?v=1">
+  <script src="./campus-map.js?v=1" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,66 +66,114 @@
     </div>
   </header>
   <main id="main">
-    <div class="opening-story">
-      <div class="opening-media" aria-hidden="true">
-        <img class="hero-image" src="./assets/plant.jpg" width="1536" height="1024" alt="" fetchpriority="high">
+    <section id="campus" class="campus-map" aria-labelledby="name">
+      <div class="campus-intro">
+        <p class="eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD Researcher</p>
+        <h1 id="name">Mustafa Umut<br> Ozbek</h1>
+        <p class="campus-summary">I study how to model, monitor, and protect nuclear and industrial systems.</p>
+        <a class="button button-outline campus-cv" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
       </div>
-      <div class="opening-content">
-        <section class="hero" aria-labelledby="name">
-          <div class="wrap hero-inner">
-            <div class="hero-copy">
-              <p class="eyebrow hero-eyebrow">Nuclear engineer <span aria-hidden="true">/</span> PhD Researcher</p>
-              <h1 id="name">Mustafa Umut<br>Ozbek</h1>
-              <p class="hero-description">I study how we can model, monitor, and protect nuclear and industrial systems. My work brings together reactor technology, instrumentation and control, and machine learning.</p>
-              <div class="actions">
-                <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">&#8595;</span></a>
-                <a class="button button-outline" href="./cv.html">View CV <span aria-hidden="true">&#8599;</span></a>
-              </div>
-            </div>
+      <div class="campus-world">
+        <div class="campus-art" aria-hidden="true">
+          <div class="campus-scene">
+            <img class="campus-image" src="./assets/campus-twilight.webp" srcset="./assets/campus-twilight-small.webp 950w, ./assets/campus-twilight.webp 1672w" sizes="(max-width: 970px) 132vw, 100vw" width="1672" height="941" fetchpriority="high" alt="">
+            <svg class="campus-lines" viewBox="0 0 1672 941" preserveAspectRatio="none" aria-hidden="true">
+              <g data-landmark="reactor-modeling" class="is-active"><path d="M1054 274V288L958 324V344"/><circle cx="958" cy="344" r="6"/><text x="958" y="344">01</text></g>
+              <g data-landmark="control-systems"><path d="M806 429L681 445L672 491"/><circle cx="672" cy="491" r="6"/><text x="672" y="491">02</text></g>
+              <g data-landmark="ot-cybersecurity"><path d="M738 221V225L656 253L641 324"/><circle cx="641" cy="324" r="6"/><text x="641" y="324">03</text></g>
+              <g data-landmark="teaching"><path d="M808 624V630L536 668"/><circle cx="536" cy="668" r="6"/><text x="536" y="668">04</text></g>
+              <g data-landmark="publications"><path d="M1064 627V644L918 699"/><circle cx="918" cy="699" r="6"/><text x="918" y="699">05</text></g>
+              <g data-landmark="experience"><path d="M1410 297V319L1388 367"/><circle cx="1388" cy="367" r="6"/><text x="1388" y="367">06</text></g>
+              <g data-landmark="engagement"><path d="M1366 627V649L1320 679"/><circle cx="1320" cy="679" r="6"/><text x="1320" y="679">07</text></g>
+            </svg>
           </div>
-        </section>
+        </div>
+        <nav class="campus-landmarks" aria-label="Portfolio map">
+          <a class="campus-landmark is-active" href="#reactor-modeling" style="--x:63.04%;--y:29.12%;--pin-x:57.30%;--pin-y:36.56%">
+            <span class="campus-card">
+              <img src="./assets/campus/reactor.webp" width="380" height="253" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">01</span><span>Reactor modeling</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#control-systems" style="--x:48.21%;--y:45.59%;--pin-x:40.19%;--pin-y:52.18%">
+            <span class="campus-card campus-control">
+              <img src="./assets/campus/control.webp" width="380" height="285" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">02</span><span>Control systems</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#ot-cybersecurity" style="--x:44.14%;--y:23.49%;--pin-x:38.34%;--pin-y:34.43%">
+            <span class="campus-card campus-plot">
+              <img src="./assets/campus/cyber.webp" width="380" height="243" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">03</span><span>OT cybersecurity &amp; AI</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#teaching" style="--x:48.33%;--y:66.31%;--pin-x:32.06%;--pin-y:70.99%">
+            <span class="campus-card campus-teaching">
+              <img src="./assets/campus/teaching.webp" width="380" height="507" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">04</span><span>Teaching</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#publications" style="--x:63.64%;--y:66.63%;--pin-x:54.90%;--pin-y:74.28%">
+            <span class="campus-card campus-publications">
+              <img src="./assets/campus/publications.webp" width="380" height="507" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">05</span><span>Publications &amp; talks</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#experience" style="--x:84.33%;--y:31.56%;--pin-x:83.01%;--pin-y:39%">
+            <span class="campus-card campus-experience">
+              <img src="./assets/campus/experience.webp" width="380" height="507" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">06</span><span>Experience &amp; education</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+          <a class="campus-landmark" href="#engagement" style="--x:81.70%;--y:66.63%;--pin-x:78.95%;--pin-y:72.16%">
+            <span class="campus-card campus-engagement">
+              <img src="./assets/campus/engagement.webp" width="380" height="380" alt="">
+              <span class="campus-label"><span class="campus-number" aria-hidden="true">07</span><span>International engagement</span><span class="campus-arrow" aria-hidden="true">&#8594;</span></span>
+            </span><span class="campus-pin" aria-hidden="true"></span>
+          </a>
+        </nav>
+      </div>
+    </section>
 
-        <section id="research" class="research-lead" aria-labelledby="research-heading">
-          <div class="wrap research-lead-inner">
-            <p class="eyebrow">Research</p>
-            <h2 id="research-heading">From reactor systems to trustworthy monitoring</h2>
-            <p>I connect nuclear engineering, instrumentation and control (I&amp;C), and machine learning to study how industrial systems behave and how teams can monitor them.</p>
-            <a href="./research.html">View research areas <span aria-hidden="true">&#8599;</span></a>
-          </div>
-        </section>
+    <section id="research" class="research-lead campus-research" aria-labelledby="research-heading">
+      <div class="wrap research-lead-inner">
+        <p class="eyebrow">Research</p>
+        <h2 id="research-heading">From reactor systems to trustworthy monitoring</h2>
+        <p>I connect nuclear engineering, instrumentation and control (I&amp;C), and machine learning to study how industrial systems behave and how teams can monitor them.</p>
+        <a href="./research.html">View research areas <span aria-hidden="true">&#8599;</span></a>
       </div>
-    </div>
+    </section>
 
     <section class="section academic-index" aria-labelledby="academic-index-heading">
       <div class="wrap">
         <h2 id="academic-index-heading">Research and teaching</h2>
         <div class="academic-links">
-          <a href="./research.html#nuclear-simulation" aria-labelledby="index-simulation">
+          <a id="reactor-modeling" class="map-destination" href="./research.html#nuclear-simulation" aria-labelledby="index-simulation">
             <img class="academic-cover" src="./assets/core-cutaway.webp" width="1180" height="787" alt="Illustrative reactor core cutaway colored like a thermal visualization" loading="lazy">
             <h3 id="index-simulation">Reactor modeling <span aria-hidden="true">&#8599;</span></h3>
             <p>Small modular reactors, battery storage, and dynamic simulation.</p>
             <span class="academic-source">Conceptual core illustration</span>
           </a>
-          <a href="./research.html#instrumentation-control" aria-labelledby="index-control">
+          <a id="control-systems" class="map-destination" href="./research.html#instrumentation-control" aria-labelledby="index-control">
             <img class="academic-cover" src="./assets/control-room-visit.webp" width="1050" height="788" alt="Mustafa Umut Ozbek in a control room during nuclear plant training" loading="lazy">
             <h3 id="index-control">Nuclear I&amp;C <span aria-hidden="true">&#8599;</span></h3>
             <p>Process instrumentation, control systems, and operator training.</p>
             <span class="academic-source">Nuclear plant training visit</span>
           </a>
-          <a href="./research.html#ai-ot-cybersecurity" aria-labelledby="index-cybersecurity">
+          <a id="ot-cybersecurity" class="map-destination" href="./research.html#ai-ot-cybersecurity" aria-labelledby="index-cybersecurity">
             <img class="academic-cover academic-plot" src="./assets/recording-aware-preview.webp" width="525" height="336" alt="Cross- and same-recording AUC comparison from Figure 2a of the OT intrusion detection preprint" loading="lazy">
             <h3 id="index-cybersecurity">OT cybersecurity <span aria-hidden="true">&#8599;</span></h3>
             <p>Machine learning and evaluation of industrial anomaly detectors.</p>
             <span class="academic-source">Figure 2a / ICSS 2026 preprint</span>
           </a>
-          <a href="./teaching.html" aria-labelledby="index-teaching">
+          <a id="teaching" class="map-destination" href="./teaching.html" aria-labelledby="index-teaching">
             <img class="academic-cover academic-teaching-photo" src="./assets/ontario-tech-teaching.webp" width="1050" height="1400" alt="Mustafa Umut Ozbek at the Ontario Tech nuclear cybersecurity course" loading="lazy">
             <h3 id="index-teaching">Teaching <span aria-hidden="true">&#8599;</span></h3>
             <p>Course appointments, student support, and simulator labs at Ontario Tech.</p>
             <span class="academic-source">Ontario Tech University</span>
           </a>
         </div>
-        <section id="engagement" class="engagement-spotlight" aria-labelledby="engagement-heading">
+        <section id="engagement" class="engagement-spotlight map-destination" aria-labelledby="engagement-heading" tabindex="-1">
           <div class="engagement-intro">
             <p class="eyebrow">International engagement</p>
             <h2 id="engagement-heading">UNODA and IAEA</h2>
@@ -193,7 +242,7 @@
       </div>
     </section>
 
-    <section id="publications" class="section wrap" aria-labelledby="publications-heading">
+    <section id="publications" class="section wrap map-destination" aria-labelledby="publications-heading" tabindex="-1">
       <p class="eyebrow">Publications &amp; talks</p>
       <h2 id="publications-heading">Selected publications</h2>
       <ol class="publication-list">
@@ -236,7 +285,7 @@
       </ol>
     </section>
 
-    <section id="experience" class="section experience" aria-labelledby="experience-heading">
+    <section id="experience" class="section experience map-destination" aria-labelledby="experience-heading" tabindex="-1">
       <div class="wrap">
         <p class="eyebrow">Experience &amp; education</p>
         <h2 id="experience-heading">Engineering, research, and project delivery</h2>
