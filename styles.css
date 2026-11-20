@@ -61,7 +61,7 @@ h3 { font-size: 22px; font-weight: 700; }
 .hero h1 { line-height: 1; }
 .hero-description { margin-top: 22px; max-width: 49ch; font-size: 19px; line-height: 1.55; color: #f0f3ed; }
 .hero-caption { position: absolute; right: 0; bottom: 15px; color: #f1f5ee; font: 12px/1.45 var(--mono); text-shadow: 0 1px 4px #111a15; }
-.research-lead { display: grid; align-items: start; min-height: max(430px, calc(100svh - var(--header-height) - 120px)); padding-block: 42px 57px; color: #f5f7f1; background: linear-gradient(180deg, transparent, #111714 100%); }
+.research-lead { display: grid; align-items: start; min-height: max(365px, calc(74svh - var(--header-height) - 95px)); padding-block: 42px 57px; color: #f5f7f1; background: linear-gradient(180deg, transparent, #111714 100%); }
 .research-lead .eyebrow, .research-lead a { color: var(--accent); }
 .research-lead-inner > p:not(.eyebrow) { max-width: 51ch; margin-block: 13px 16px; color: #e1e7db; }
 .research-lead a { font-weight: 700; }
@@ -87,22 +87,17 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .experience { background: var(--wash); }
 .experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
 
-.research { --story-offset: 88px; background: #111714; color: #f5f7f1; }
-.research .eyebrow, .research a { color: var(--accent); }
-.research p:not(.eyebrow) { color: #c7d0c5; }
-.research.section { padding-top: 16px; }
-.research-story { display: grid; grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr); column-gap: 44px; }
-.story-stage { grid-column: 2; grid-row: 1; align-self: start; position: sticky; top: var(--story-offset); height: clamp(320px, 67svh, 560px); overflow: clip; isolation: isolate; background: #111714; }
-.story-image { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
-.story-image img { width: 100%; height: 100%; object-fit: contain; }
-.research-story[data-scene="systems"] [data-figure="systems"],
-.research-story[data-scene="control"] [data-figure="control"],
-.research-story[data-scene="evaluation"] [data-figure="evaluation"] { opacity: 1; visibility: visible; transition-delay: 0s; }
-.story-chapters { grid-column: 1; grid-row: 1; }
-.story-chapter { display: grid; align-content: center; min-height: clamp(300px, 67svh, 560px); border-top: 1px solid #39493e; padding-block: 33px; }
-.story-chapter h3 { max-width: 19ch; font-size: 32px; }
-.story-chapter p { max-width: 47ch; margin-top: 11px; }
-.story-chapter .text-links { margin-top: 18px; }
+.academic-index h2 { max-width: none; }
+.academic-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
+.academic-links a { display: grid; grid-template-rows: auto auto 1fr auto; gap: 9px; padding-bottom: 14px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.academic-links h3 { display: flex; gap: 8px; justify-content: space-between; align-items: baseline; margin-top: 3px; font-size: 22px; text-wrap: pretty; }
+.academic-links h3 span { color: var(--link); font-size: 15px; }
+.academic-links a:hover h3 { color: var(--link); text-decoration: underline; }
+.academic-links p { font-size: 15px; line-height: 1.55; }
+.academic-cover, .teaching-feature img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.academic-cover.academic-plot { object-fit: contain; background: #fff; padding-inline: 5px; }
+.academic-teaching-photo { object-position: center 68%; }
+.academic-source { color: var(--muted); font: 11px/1.5 var(--mono); }
 
 .projects { background: var(--wash); }
 .project-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: start; }
@@ -133,6 +128,20 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .field-profile section .eyebrow { margin-top: 0; }
 .field-entry > div > p:first-child { margin-top: 0; }
 .field-roles > div:first-child { padding-top: 0; border-top: 0; }
+.field-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; max-width: 530px; }
+.field-gallery img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; object-position: 50% 64%; border-radius: 4px; }
+.teaching-feature { align-items: center; }
+.teaching-feature h1 + p { max-width: 55ch; margin-top: 12px; color: var(--muted); }
+.teaching-feature figure { max-width: 390px; }
+.teaching-feature img { object-position: center 68%; }
+.teaching-feature figcaption a, .research-plot figcaption a { color: var(--link); }
+.teaching-appointments { margin: 18px 0 0; }
+.teaching-appointments > div { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 9px 35px; border-top: 1px solid var(--line); padding-block: 15px; }
+.teaching-appointments dt { font-weight: 750; line-height: 1.45; }
+.teaching-appointments dt small { display: block; margin-top: 5px; font: 12px/1.5 var(--mono); color: var(--muted); }
+.teaching-appointments dd { color: var(--muted); }
+.research-plot { max-width: 780px; margin-block: 20px 12px; }
+.research-plot img { width: 100%; border-radius: 4px; }
 .site-nav [aria-current="page"] { color: var(--accent); }
 
 .publication-list { margin: 0; padding: 0; list-style: none; }
@@ -167,7 +176,6 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .opening-media .hero-image { transform: scale(calc(1 + .17 * var(--chapter-progress))); }
   .opening-media::after { opacity: calc(.14 + .57 * var(--chapter-progress)); }
   .research-lead-inner { position: sticky; top: calc(var(--header-height) + min(16svh, 130px)); }
-  .story-image { transition: opacity 420ms ease, visibility 0s linear 420ms; }
   .site-header { view-transition-name: portfolio-header; }
   ::view-transition-group(root), ::view-transition-group(portfolio-header) { animation-duration: 240ms; }
   ::view-transition-image-pair(root) { background: var(--paper); }
@@ -190,7 +198,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .section { padding-block: 60px; }
   .about { gap: 30px; }
   .project-layout { gap: 28px; }
-  .research-story { column-gap: 26px; }
+  .academic-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 640px) {
@@ -207,7 +215,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .hero-inner { min-height: min(540px, 75svh); padding-block: 140px 50px; }
   .hero-image { object-position: 84% 44%; }
   .opening-media::before { background: linear-gradient(0deg, #131c18f0 0%, #131c18d9 33%, #131c187a 63%, #131c181a 100%); }
-  .research-lead { min-height: max(280px, calc(67svh - 35px)); padding-block: 24px 38px; }
+  .research-lead { min-height: max(260px, calc(50svh - 35px)); padding-block: 24px 38px; }
   .research-lead-inner { top: calc(var(--header-height) + 28px); }
   .research-profile { padding-block: 30px 48px; }
   .research-profile h1 { font-size: 36px; }
@@ -222,11 +230,10 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .section { padding-block: 43px; }
   .section h2 { margin-bottom: 21px; }
   .about, .project-layout, .experience-grid, .engagement-grid, .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 23px; }
-  .research { --story-offset: 79px; }
-  .research-story { display: block; }
-  .story-stage { height: clamp(136px, 28svh, 235px); z-index: 1; }
-  .story-chapter { min-height: max(185px, 38svh); padding-block: 24px; }
-  .story-chapter h3 { font-size: 25px; }
+  .academic-links { gap: 21px 15px; }
+  .academic-links h3 { font-size: 17px; }
+  .academic-links p { font-size: 14px; }
+  .teaching-appointments > div { grid-template-columns: minmax(0, 1fr); }
   .project-figure { max-width: 310px; }
   .portrait { max-width: 265px; }
   .publication-list li { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-block: 17px; }
@@ -238,6 +245,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   h1 { font-size: 37px; }
   .site-nav { gap: 6px; }
   .site-nav a { font-size: 12px; }
+  .site-nav .nav-cv { padding-inline-start: 8px; }
   .actions .button { gap: 9px; padding-inline: 11px; }
 }
 

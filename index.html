@@ -15,8 +15,8 @@
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://mumutozbek.github.io/">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="./styles.css?v=6">
-  <script src="./research-story.js?v=2" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=7">
+  <script src="./research-story.js?v=3" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,6 +45,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="./research.html">Research</a>
         <a href="#publications">Publications</a>
+        <a href="./teaching.html">Teaching</a>
         <a href="./experience.html">Experience</a>
         <a class="nav-cv" href="./cv.html">CV</a>
       </nav>
@@ -82,37 +83,34 @@
       </div>
     </div>
 
-    <section class="section research" aria-label="Research chapters" data-research-story>
+    <section class="section academic-index" aria-labelledby="academic-index-heading">
       <div class="wrap">
-        <div class="research-story" data-scene="systems">
-          <div class="story-stage">
-            <figure class="story-image" data-figure="systems">
-              <img src="./assets/research-core-distribution.webp" width="1200" height="900" alt="Illustrative core cross-sections showing relative temperature and pressure distributions on separate color scales. These are not calculated reactor data." loading="lazy">
-            </figure>
-            <figure class="story-image" data-figure="control">
-              <img src="./assets/research-control-simulator.webp" width="1200" height="900" alt="Conceptual simulator loop linking a virtual process, sensors, a controller, and actuators, with separate connections for the operator display and recorded signals." loading="lazy">
-            </figure>
-            <figure class="story-image" data-figure="evaluation">
-              <img src="./assets/research-ot-monitoring.webp" width="1200" height="900" alt="Synthetic pressure, flow, control, and model-score traces aligned on one timeline, with a shared interval highlighted for review." loading="lazy">
-            </figure>
-          </div>
-          <div class="story-chapters">
-            <article class="story-chapter" data-scene="systems">
-              <h3>Reactor modeling and simulation</h3>
-              <p>I study how small modular reactors and battery energy storage can work together. Dynamic simulation helps me explore how plant and storage behavior changes as demand shifts.</p>
-              <p class="text-links"><a href="./research.html#nuclear-simulation">Nuclear energy simulation research <span aria-hidden="true">&#8599;</span></a></p>
-            </article>
-            <article class="story-chapter" data-scene="control">
-              <h3>Nuclear instrumentation and control (I&amp;C)</h3>
-              <p>Process measurements and control signals tell different parts of the same story. I study how combining them can help distinguish normal variation from events that need investigation.</p>
-              <p class="text-links"><a href="./research.html#instrumentation-control">Nuclear I&amp;C research <span aria-hidden="true">&#8599;</span></a></p>
-            </article>
-            <article class="story-chapter" data-scene="evaluation">
-              <h3>Trustworthy AI for OT cybersecurity</h3>
-              <p>I evaluate whether anomaly detectors hold up when operating conditions or recording practices change. My work combines explainable AI, time-series analysis, and careful testing across industrial datasets.</p>
-              <p class="text-links"><a href="./research.html#ai-ot-cybersecurity">AI and nuclear cybersecurity research <span aria-hidden="true">&#8599;</span></a></p>
-            </article>
-          </div>
+        <h2 id="academic-index-heading">Research and teaching</h2>
+        <div class="academic-links">
+          <a href="./research.html#nuclear-simulation" aria-labelledby="index-simulation">
+            <img class="academic-cover" src="./assets/core-cutaway.webp" width="1180" height="787" alt="Illustrative reactor core cutaway colored like a thermal visualization" loading="lazy">
+            <h3 id="index-simulation">Reactor modeling <span aria-hidden="true">&#8599;</span></h3>
+            <p>Small modular reactors, battery storage, and dynamic simulation.</p>
+            <span class="academic-source">Conceptual core illustration</span>
+          </a>
+          <a href="./research.html#instrumentation-control" aria-labelledby="index-control">
+            <img class="academic-cover" src="./assets/control-room-visit.webp" width="1050" height="788" alt="Mustafa Umut Ozbek in a control room during nuclear plant training" loading="lazy">
+            <h3 id="index-control">Nuclear I&amp;C <span aria-hidden="true">&#8599;</span></h3>
+            <p>Process instrumentation, control systems, and operator training.</p>
+            <span class="academic-source">Nuclear plant training visit</span>
+          </a>
+          <a href="./research.html#ai-ot-cybersecurity" aria-labelledby="index-cybersecurity">
+            <img class="academic-cover academic-plot" src="./assets/recording-aware-preview.webp" width="525" height="336" alt="Cross- and same-recording AUC comparison from Figure 2a of the OT intrusion detection preprint" loading="lazy">
+            <h3 id="index-cybersecurity">OT cybersecurity <span aria-hidden="true">&#8599;</span></h3>
+            <p>Machine learning and evaluation of industrial anomaly detectors.</p>
+            <span class="academic-source">Figure 2a / ICSS 2026 preprint</span>
+          </a>
+          <a href="./teaching.html" aria-labelledby="index-teaching">
+            <img class="academic-cover academic-teaching-photo" src="./assets/ontario-tech-teaching.webp" width="1050" height="1400" alt="Mustafa Umut Ozbek at the Ontario Tech nuclear cybersecurity course" loading="lazy">
+            <h3 id="index-teaching">Teaching <span aria-hidden="true">&#8599;</span></h3>
+            <p>Course appointments, student support, and simulator labs at Ontario Tech.</p>
+            <span class="academic-source">Ontario Tech University</span>
+          </a>
         </div>
       </div>
     </section>
@@ -217,7 +215,7 @@
             <h3 class="column-title">Professional experience</h3>
             <dl class="timeline">
               <div><dt>Graduate Research Assistant</dt><dd class="meta">Ontario Tech University / Since 2025</dd><dd>Research nuclear and critical infrastructure cybersecurity, instrumentation and control, reactor modeling, and AI for cyber-physical systems.</dd></div>
-              <div><dt>Graduate Teaching Assistant</dt><dd class="meta">Ontario Tech University / Since 2026</dd><dd>Support courses in machine learning, cybersecurity, data analytics, and project management through tutorials, labs, and assessment.</dd></div>
+              <div><dt>Graduate Teaching Assistant</dt><dd class="meta">Ontario Tech University / Since 2026</dd><dd>Support courses in machine learning, cybersecurity, data analytics, and project management. <a href="./teaching.html#appointments">See course appointments</a>.</dd></div>
               <div><dt>Research &amp; Development Leadership</dt><dd class="meta">Akkuyu Nuclear Power Plant project / 2024-2026</dd><dd>Led cross-functional work in automation, software integration, engineering analytics, and industrial process improvement.</dd></div>
               <div><dt>Research Assistant, Nuclear I&amp;C Laboratory</dt><dd class="meta">Tsinghua University, INET / 2022-2024</dd><dd>Studied explainable ML for monitoring instrumentation and control systems.</dd></div>
               <div><dt>Planning Engineer &amp; Data Scientist</dt><dd class="meta">Akkuyu Nuclear Power Plant project / 2021-2022</dd><dd>Applied data analysis to construction schedules, resource planning, and engineering coordination.</dd></div>
@@ -242,7 +240,7 @@
       <p class="eyebrow">International engagement</p>
       <h2 id="engagement-heading">Teaching and international engagement</h2>
       <div class="engagement-grid">
-        <article><h3>Nuclear cybersecurity course assistant</h3><p>Supported industry participants in Ontario Tech's 2026 course on nuclear energy systems, I&amp;C, and OT cybersecurity. Helped deliver hands-on exercises with the IAEA Asherah Nuclear Simulator.</p></article>
+        <article><h3>Nuclear cybersecurity course assistant</h3><p>Supported industry participants in Ontario Tech's 2026 course on nuclear energy systems, I&amp;C, and OT cybersecurity. <a href="./teaching.html#nuclear-training">See the simulator-based teaching role</a>.</p></article>
         <article><h3>UNODA Youth Leader Fellow</h3><p>Joined the Youth Leader Fund for a World Without Nuclear Weapons in 2025-2026, including the study visit to Hiroshima and Nagasaki.</p></article>
         <article><h3>IAEA Nuclear Security Delegation for the Future</h3><p>Served as a youth delegate and presented research at ICONS 2024 in Vienna.</p></article>
         <article><h3>IAEA Coordinated Research Project J02017</h3><p>Contributed to a project on computer security for radiation detection systems.</p></article>

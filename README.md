@@ -1,6 +1,6 @@
 # Mustafa Umut Ozbek | Academic and engineering portfolio
 
-This directory is a standalone GitHub Pages site. Open `index.html` to preview it locally. The site uses HTML, CSS, a small script for the research photo sequence, and local image assets.
+This directory is a standalone GitHub Pages site. Open `index.html` to preview it locally. The site uses HTML, CSS, a small script for the opening scroll transition, and local image assets.
 
 ## Publish
 
@@ -18,7 +18,10 @@ The public profile and CV reflect graduate research, nuclear engineering, teachi
 - `assets/advanced-test-reactor-core.jpg`: Resized [Advanced Test Reactor core photograph](https://commons.wikimedia.org/wiki/File:Advanced_Test_Reactor.jpg), Argonne National Laboratory, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Used as reference photography, not as an image of the author's simulation.
 - `assets/qinshan-plant-training.jpg` and `assets/daya-bay-plant-training.jpg`: Resized solo plant-training photos from the author's collection.
 - `assets/chalk-river-museum-portrait.jpg`: Portrait from the author's [LinkedIn post](https://www.linkedin.com/posts/mustafaumutozbek_candu-nuclearenergy-ugcPost-7526851310755905536-dFxi/) of the Canadian Nuclear Heritage Museum stop during the Chalk River trip.
-- `assets/research-*.webp`: Original research chapter illustrations. The temperature and pressure distributions and OT traces are synthetic. The simulator figure shows a conceptual signal loop, not a plant configuration.
+- `assets/core-cutaway.webp`: Built-in image generation, a conceptual reactor cutaway for the academic index. Prompt: a landscape scientific illustration with an anonymous reactor core, simplified channels, silver vessel, and qualitative thermal colors, without dimensions, numerical results, labels, or plant-specific geometry.
+- `assets/control-room-visit.webp`: Solo training photo from the author's local collection.
+- `assets/recording-aware-results.webp` and `assets/recording-aware-preview.webp`: Figure 2 and panel 2a from the author's [recording-aware evaluation preprint](https://arxiv.org/abs/2610.24128), showing window-size sensitivity across evaluation protocols.
+- `assets/ontario-tech-teaching.webp`: Solo simulator lab photo from the author's [Ontario Tech course-session post](https://www.linkedin.com/feed/update/urn:li:activity:7469888368735281152/).
 
 The Experience page links to the author's original Chalk River recap, the museum photo post, Ontario Tech's program coverage, and the public IEEE ACSAC workshop agenda. Project experience names the Akkuyu site and project, without implying direct employment by the plant.
 

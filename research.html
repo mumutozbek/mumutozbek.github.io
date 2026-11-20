@@ -7,7 +7,7 @@
   <meta name="description" content="Research and experience in nuclear reactor modeling and simulation, instrumentation and control, AI/ML for OT cybersecurity, and nuclear engineering project management.">
   <link rel="canonical" href="https://mumutozbek.github.io/research.html">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="./styles.css?v=4">
+  <link rel="stylesheet" href="./styles.css?v=7">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Nuclear Engineering, I&amp;C and OT Research | Mustafa Umut Ozbek">
   <meta property="og:description" content="Reactor simulation, nuclear instrumentation and control, AI/ML for OT cybersecurity, and engineering project management.">
@@ -34,6 +34,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="./research.html" aria-current="page">Research</a>
         <a href="./#publications">Publications</a>
+        <a href="./teaching.html">Teaching</a>
         <a href="./experience.html">Experience</a>
         <a class="nav-cv" href="./cv.html">CV</a>
       </nav>
@@ -63,16 +64,26 @@
         <figcaption id="reactor-photo-credit">Advanced Test Reactor, Idaho National Laboratory. Reference photograph, not an output of my SMR model. <a href="https://commons.wikimedia.org/wiki/File:Advanced_Test_Reactor.jpg">Argonne National Laboratory</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> (resized).</figcaption>
       </figure>
     </section>
-    <section id="instrumentation-control" aria-labelledby="ic-heading">
-      <h2 id="ic-heading">Nuclear instrumentation and control (I&amp;C)</h2>
-      <p>Nuclear I&amp;C connects what instruments measure to what control systems and operators can observe. At Tsinghua University's Institute of Nuclear and New Energy Technology, I studied explainable machine learning for identifying anomalies in nuclear instrumentation and control data. The question was how to explain why a model flagged an event in terms that are meaningful to an engineer.</p>
-      <p>At Ontario Tech University, I supported practical instruction in nuclear energy systems, I&amp;C, and OT cybersecurity using the IAEA Asherah Nuclear Simulator.</p>
-      <p class="text-links"><a href="https://doi.org/10.2139/ssrn.5333003">Nuclear I&amp;C anomaly detection preprint</a><a href="https://www.linkedin.com/posts/mustafaumutozbek_nuclearenergy-cybersecurity-otsecurity-ugcPost-7472701546288500736-HPvL/">Read the course recap</a></p>
+    <section id="instrumentation-control" class="research-feature" aria-labelledby="ic-heading">
+      <div>
+        <h2 id="ic-heading">Nuclear instrumentation and control (I&amp;C)</h2>
+        <p>Nuclear I&amp;C connects what instruments measure to what control systems and operators can observe. At Tsinghua University's Institute of Nuclear and New Energy Technology, I studied explainable machine learning for identifying anomalies in nuclear instrumentation and control data. The question was how to explain why a model flagged an event in terms that are meaningful to an engineer.</p>
+        <p>At Ontario Tech University, I supported practical instruction in nuclear energy systems, I&amp;C, and OT cybersecurity using the IAEA Asherah Nuclear Simulator.</p>
+        <p class="text-links"><a href="https://doi.org/10.2139/ssrn.5333003">Nuclear I&amp;C anomaly detection preprint</a><a href="./teaching.html#nuclear-training">Simulator-based teaching</a></p>
+      </div>
+      <figure class="research-figure">
+        <img src="./assets/control-room-visit.webp" width="1050" height="788" alt="Mustafa Umut Ozbek beside control panels during a nuclear plant training visit" loading="lazy">
+        <figcaption>Control-room visit during my nuclear plant training.</figcaption>
+      </figure>
     </section>
     <section id="ai-ot-cybersecurity" aria-labelledby="ai-heading">
       <h2 id="ai-heading">AI/ML for nuclear and OT cybersecurity</h2>
       <p>My OT cybersecurity research focuses on how to evaluate machine learning for industrial control systems (ICS). A detector can score well because its evaluation setup makes different data recordings easy to distinguish. That is a different problem from identifying an abnormal event while the system is running.</p>
       <p>At IEEE CASCON 2026, we reported how eleven industrial anomaly detectors responded to changes in training-data quality. Our ICSS 2026 work, accepted for presentation alongside IEEE ACSAC, examined how evaluation changes when a model is tested within a recording. <a href="./#cascon">CASCON paper</a> and <a href="./#icss">ICSS paper</a>.</p>
+      <figure class="research-plot">
+        <img src="./assets/recording-aware-results.webp" width="1054" height="336" alt="Two plots comparing anomaly detection AUC across recording protocols and window lengths on the ProvICS dataset" loading="lazy">
+        <figcaption>Window-size sensitivity on ProvICS. Figure 2 from our <a href="https://arxiv.org/abs/2610.24128">recording-aware evaluation preprint</a>.</figcaption>
+      </figure>
     </section>
     <section id="project-management" aria-labelledby="management-heading">
       <h2 id="management-heading">Nuclear engineering project management</h2>
