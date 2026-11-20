@@ -4,6 +4,18 @@
   z-index: 1;
   background: var(--paper);
 }
+.campus-chapter .chapter-arrival {
+  position: relative;
+  background: var(--handoff-surface);
+}
+.campus-chapter .campus-research {
+  --handoff-surface: #1b2922;
+  z-index: 2;
+}
+.campus-chapter .engagement-chapter {
+  --handoff-surface: var(--paper);
+  z-index: 3;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .campus-chapter.is-scroll-ready .academic-index::before {
@@ -17,7 +29,30 @@
     content: "";
   }
   .campus-chapter.is-scroll-ready .academic-index > .wrap {
-    translate: 0 calc(14px * (1 - var(--chapter-progress, 0)));
+    translate: 0 calc(14px * (1 - var(--chapter-progress, 0)) - 16px * var(--handoff-out, 0));
+  }
+  .campus-chapter.is-scroll-ready .chapter-arrival::before {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 100%;
+    height: clamp(24px, 5svh, 52px);
+    background: linear-gradient(to top, var(--handoff-surface), transparent);
+    opacity: var(--handoff-edge, 0);
+    pointer-events: none;
+    content: "";
+  }
+  .campus-chapter.is-scroll-ready .chapter-arrival > .wrap {
+    translate: 0 calc(14px * (1 - var(--handoff-in, 1)) - 16px * var(--handoff-out, 0));
+  }
+}
+
+@media (min-width: 971px) and (min-height: 560px) and (prefers-reduced-motion: no-preference) {
+  .campus-chapter.is-scroll-ready :is(.academic-index, .campus-research) {
+    position: sticky;
+    top: var(--handoff-hold, auto);
+  }
+  .campus-chapter.is-scroll-ready :is(.academic-index, .campus-research) > .wrap {
+    opacity: calc(1 - .42 * var(--handoff-out, 0));
   }
 }
 
@@ -186,7 +221,7 @@
   pointer-events: auto;
 }
 .campus-pin:hover { background: #d7ef8329; }
-.campus-research.research-lead { min-height: 0; padding-block: 27px 40px; background: #1b2922; }
+.campus-research.research-lead { min-height: 0; padding-block: 27px 40px; background: var(--handoff-surface); }
 .campus-research .research-lead-inner { position: static; }
 .campus-research .eyebrow { margin-bottom: 6px; }
 .academic-links .map-destination:target { border-bottom-color: var(--link); }
