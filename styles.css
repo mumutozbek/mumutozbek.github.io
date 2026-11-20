@@ -95,17 +95,18 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .story-stage { grid-column: 2; grid-row: 1; align-self: start; position: sticky; top: var(--story-offset); height: clamp(320px, 67svh, 560px); overflow: clip; isolation: isolate; background: #222b25; }
 .story-image { position: absolute; inset: 0; }
 .story-image img { width: 100%; height: 100%; object-fit: cover; }
-.story-image span { position: absolute; inset: auto auto 12px 12px; padding: 5px 9px; background: #111714e8; color: #f5f7f1; font: 11px/1.45 var(--mono); }
-.story-image-plant img { object-position: 72% center; }
+.story-image span { position: absolute; inset: auto auto 12px 12px; max-width: calc(100% - 24px); padding: 5px 9px; background: #111714e8; color: #f5f7f1; font: 11px/1.45 var(--mono); }
+.story-image-core img { object-position: center 54%; }
 .story-image-conference { opacity: 0; }
 .story-image-conference img { object-position: center 33%; }
-.research-story[data-scene="control"] .story-image-plant img { transform: scale(1.22); transform-origin: 80% 51%; }
+.research-story[data-scene="control"] .story-image-core img { transform: scale(1.12); transform-origin: center 58%; }
 .research-story[data-scene="evaluation"] .story-image-conference { opacity: 1; }
 .story-chapters { grid-column: 1; grid-row: 1; }
 .story-chapter { display: grid; align-content: center; min-height: clamp(300px, 67svh, 560px); border-top: 1px solid #39493e; padding-block: 33px; }
 .story-chapter h3 { max-width: 19ch; font-size: 32px; }
 .story-chapter p { max-width: 47ch; margin-top: 11px; }
 .story-chapter .text-links { margin-top: 18px; }
+.story-chapter .image-credit { color: #c7d0c5; font: 12px/1.65 var(--mono); align-self: center; }
 
 .projects { background: var(--wash); }
 .project-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: start; }
@@ -124,6 +125,18 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .research-profile section { padding-block: 26px; border-bottom: 1px solid var(--line); }
 .research-profile h2 { font-size: 29px; max-width: 38ch; }
 .research-profile section p { max-width: 75ch; margin-top: 9px; }
+.research-feature { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 24px 48px; align-items: start; }
+.research-figure { max-width: 460px; }
+.research-figure img, .field-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 58%; border-radius: 4px; }
+.research-figure a { color: var(--link); }
+.field-profile h1 { max-width: none; }
+.field-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; margin-top: 20px; }
+.field-gallery h3 { margin-top: 14px; }
+.field-gallery img { aspect-ratio: 5 / 4; object-position: center 64%; }
+.field-entry { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); gap: 12px 48px; }
+.field-entry .eyebrow { margin-top: 0; }
+.field-entry > div > p:first-child { margin-top: 0; }
+.field-roles > div:first-child { padding-top: 0; border-top: 0; }
 .site-nav [aria-current="page"] { color: var(--accent); }
 
 .publication-list { margin: 0; padding: 0; list-style: none; }
@@ -162,7 +175,12 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .story-image img { transition: transform 700ms ease; }
   .site-header { view-transition-name: portfolio-header; }
   ::view-transition-group(root), ::view-transition-group(portfolio-header) { animation-duration: 240ms; }
+  ::view-transition-image-pair(root) { background: var(--paper); }
+  ::view-transition-old(root) { animation: none; opacity: 0; }
+  ::view-transition-new(root) { animation: page-arrival 200ms ease-out both; mix-blend-mode: normal; }
 }
+
+@keyframes page-arrival { from { opacity: .6; } to { opacity: 1; } }
 
 @media (prefers-reduced-motion: reduce) {
   .opening-media { position: static; }
@@ -199,6 +217,8 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .research-profile { padding-block: 30px 48px; }
   .research-profile h1 { font-size: 36px; }
   .research-profile h2 { font-size: 24px; }
+  .research-feature, .field-gallery, .field-entry { grid-template-columns: minmax(0, 1fr); }
+  .field-gallery { gap: 24px; }
   .hero-eyebrow { margin-bottom: 12px; }
   .hero-description { margin-top: 15px; font-size: 16px; }
   .actions { margin-top: 18px; gap: 8px; }
