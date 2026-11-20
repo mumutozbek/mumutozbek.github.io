@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://mumutozbek.github.io/">
   <link rel="icon" href="./assets/portrait.jpg?v=2" type="image/jpeg">
-  <link rel="stylesheet" href="./styles.css?v=4">
+  <link rel="stylesheet" href="./styles.css?v=6">
   <script src="./research-story.js?v=2" defer></script>
   <script type="application/ld+json">
   {
@@ -85,21 +85,22 @@
     <section class="section research" aria-label="Research chapters" data-research-story>
       <div class="wrap">
         <div class="research-story" data-scene="systems">
-          <div class="story-stage" aria-hidden="true">
-            <div class="story-image story-image-core">
-              <img src="./assets/advanced-test-reactor-core.jpg" width="914" height="1200" alt="" loading="lazy">
-              <span>Advanced Test Reactor core / Idaho National Laboratory</span>
-            </div>
-            <div class="story-image story-image-conference">
-              <img src="./assets/cascon-toronto.jpg" width="720" height="960" alt="" loading="lazy">
-              <span>IEEE CASCON 2026, Toronto</span>
-            </div>
+          <div class="story-stage">
+            <figure class="story-image" data-figure="systems">
+              <img src="./assets/research-core-distribution.webp" width="1200" height="900" alt="Illustrative core cross-sections showing relative temperature and pressure distributions on separate color scales. These are not calculated reactor data." loading="lazy">
+            </figure>
+            <figure class="story-image" data-figure="control">
+              <img src="./assets/research-control-simulator.webp" width="1200" height="900" alt="Conceptual simulator loop linking a virtual process, sensors, a controller, and actuators, with separate connections for the operator display and recorded signals." loading="lazy">
+            </figure>
+            <figure class="story-image" data-figure="evaluation">
+              <img src="./assets/research-ot-monitoring.webp" width="1200" height="900" alt="Synthetic pressure, flow, control, and model-score traces aligned on one timeline, with a shared interval highlighted for review." loading="lazy">
+            </figure>
           </div>
           <div class="story-chapters">
             <article class="story-chapter" data-scene="systems">
               <h3>Reactor modeling and simulation</h3>
               <p>I study how small modular reactors and battery energy storage can work together. Dynamic simulation helps me explore how plant and storage behavior changes as demand shifts.</p>
-              <p class="text-links"><a href="./research.html#nuclear-simulation">Nuclear energy simulation research <span aria-hidden="true">&#8599;</span></a><a class="image-credit" href="./research.html#reactor-photo-credit">Image credit</a></p>
+              <p class="text-links"><a href="./research.html#nuclear-simulation">Nuclear energy simulation research <span aria-hidden="true">&#8599;</span></a></p>
             </article>
             <article class="story-chapter" data-scene="control">
               <h3>Nuclear instrumentation and control (I&amp;C)</h3>
