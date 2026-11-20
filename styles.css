@@ -1,3 +1,5 @@
+@view-transition { navigation: auto; }
+
 :root {
   color-scheme: light;
   --ink: #181e1b;
@@ -97,7 +99,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .academic-cover.academic-plot { object-fit: contain; background: #fff; padding-inline: 5px; }
 .academic-teaching-photo { object-position: center 68%; }
 .academic-source { color: var(--muted); font: 11px/1.5 var(--mono); }
-.engagement-spotlight { display: grid; grid-template-columns: minmax(0, .95fr) repeat(2, minmax(0, 1fr)); gap: 25px; align-items: start; margin-top: 45px; padding-top: 32px; border-top: 1px solid var(--line); }
+.engagement-spotlight { display: grid; grid-template-columns: minmax(0, .95fr) repeat(2, minmax(0, 1fr)); gap: 25px; align-items: start; }
 .engagement-spotlight h2 { margin-bottom: 12px; font-size: 32px; }
 .engagement-intro > p:not(.eyebrow) { max-width: 37ch; }
 .engagement-link { display: block; text-decoration: none; }
@@ -177,22 +179,23 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-block: 20px; font-size: 13px; }
 
 @media (prefers-reduced-motion: no-preference) {
-  @view-transition { navigation: auto; }
-
   html { scroll-behavior: smooth; }
   .opening-media .hero-image { transform: scale(calc(1 + .17 * var(--chapter-progress))); }
   .opening-media::after { opacity: calc(.14 + .57 * var(--chapter-progress)); }
   .research-lead-inner { position: sticky; top: calc(var(--header-height) + min(16svh, 130px)); }
   .site-header { view-transition-name: portfolio-header; }
-  ::view-transition-group(root), ::view-transition-group(portfolio-header) { animation-duration: 240ms; }
-  ::view-transition-image-pair(root) { background: var(--paper); }
-  ::view-transition-old(root) { animation: none; opacity: 0; }
-  ::view-transition-new(root) { animation: page-arrival 200ms ease-out both; mix-blend-mode: normal; }
+  ::view-transition-group(root), ::view-transition-group(portfolio-header) { animation-duration: 220ms; }
+  ::view-transition-old(root) { animation: none; mix-blend-mode: normal; }
+  ::view-transition-new(root) { animation: page-arrival 220ms ease-out both; mix-blend-mode: normal; }
+  ::view-transition-old(portfolio-header) { animation: none; opacity: 0; }
+  ::view-transition-new(portfolio-header) { animation: none; }
 }
 
-@keyframes page-arrival { from { opacity: .6; } to { opacity: 1; } }
+@keyframes page-arrival { from { opacity: 0; } to { opacity: 1; } }
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+
   .opening-media { position: static; }
   .research-lead { min-height: 0; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none; }
@@ -242,7 +245,7 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .academic-links { gap: 21px 15px; }
   .academic-links h3 { font-size: 17px; }
   .academic-links p { font-size: 14px; }
-  .engagement-spotlight { gap: 16px; margin-top: 30px; padding-top: 23px; }
+  .engagement-spotlight { gap: 16px; }
   .engagement-spotlight h2 { margin-bottom: 9px; font-size: 25px; }
   .engagement-link h3 { font-size: 16px; }
   .engagement-link img { aspect-ratio: 4 / 3; }
