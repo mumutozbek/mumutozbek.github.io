@@ -60,7 +60,6 @@ h3 { font-size: 22px; font-weight: 700; }
 .hero-eyebrow span { padding-inline: 4px; }
 .hero h1 { line-height: 1; }
 .hero-description { margin-top: 22px; max-width: 49ch; font-size: 19px; line-height: 1.55; color: #f0f3ed; }
-.hero-caption { position: absolute; right: 0; bottom: 15px; color: #f1f5ee; font: 12px/1.45 var(--mono); text-shadow: 0 1px 4px #111a15; }
 .research-lead { display: grid; align-items: start; min-height: max(365px, calc(74svh - var(--header-height) - 95px)); padding-block: 42px 57px; color: #f5f7f1; background: linear-gradient(180deg, transparent, #111714 100%); }
 .research-lead .eyebrow, .research-lead a { color: var(--accent); }
 .research-lead-inner > p:not(.eyebrow) { max-width: 51ch; margin-block: 13px 16px; color: #e1e7db; }
@@ -235,7 +234,6 @@ figcaption { margin-top: 8px; font: 12px/1.55 var(--mono); color: var(--muted); 
   .hero-eyebrow { margin-bottom: 12px; }
   .hero-description { margin-top: 15px; font-size: 16px; }
   .actions { margin-top: 18px; gap: 8px; }
-  .hero-caption { bottom: 9px; font-size: 10px; }
   .update-inner { flex-wrap: wrap; gap: 3px 16px; padding-block: 12px; }
   .update-inner a { font-size: 14px; }
   .section { padding-block: 43px; }
